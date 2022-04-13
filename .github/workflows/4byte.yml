@@ -8,10 +8,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Install Foundry
+        uses: onbjerg/foundry-toolchain@v1.0.6
+        with:
+          version: nightly
+
       - name: Clone repo with submodules
         uses: actions/checkout@v2
         with:
           submodules: recursive
 
-      - name: Enumerate and push each Solidity file
-        run: find $(pwd) -name '*.sol' | xargs -n 1 -I {} curl -F source_file=@{} https://www.4byte.directory/api/v1/import-solidity/
+      - name: Build files
+        run: |
+          make build
+
+      - name: Replace all 'error' with 'function' in compiled json files
+        run: |
+          find $(pwd)/out -type f -name '*.json' -print0 | xargs -0 sed -i 's/"type": "error"/"type": "function"/g'
+
+      - name: Parse each json file and submit it
+        run: |
+          echo "Psych!! I'm a robot!"
+
+
+
+      # - name: Enumerate and push each Solidity file
+      #   run: find $(pwd) -name '*.sol' | xargs -n 1 -I {} curl -F source_file=@{} https://www.4byte.directory/api/v1/import-solidity/

@@ -1,0 +1,87 @@
+{
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "sources": "contracts",
+    "tests": "test",
+    "libraries": [
+      "lib"
+    ]
+  },
+  "files": {
+    "/home/daniel/Development/github.com/cleanunicorn/4byte-update/contracts/Test4Byte copy.sol": {
+      "lastModificationDate": 1649856244568,
+      "contentHash": "aa51bafe4a3badb0be0cfe9bfa46511f",
+      "sourceName": "contracts/Test4Byte copy.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": null,
+      "artifacts": {
+        "WeirdContract": {
+          "0.8.13+commit.abaa5c0e.Linux.gcc": "Test4Byte copy.sol/WeirdContract.json"
+        }
+      }
+    },
+    "/home/daniel/Development/github.com/cleanunicorn/4byte-update/contracts/Test4Byte.sol": {
+      "lastModificationDate": 1649854050358,
+      "contentHash": "aa51bafe4a3badb0be0cfe9bfa46511f",
+      "sourceName": "contracts/Test4Byte.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": null,
+      "artifacts": {
+        "WeirdContract": {
+          "0.8.13+commit.abaa5c0e.Linux.gcc": "Test4Byte.sol/WeirdContract.json"
+        }
+      }
+    }
+  }
+}
