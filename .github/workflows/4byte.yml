@@ -8,5 +8,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Show Solidity files
+        run: |
+          find $(pwd) -name '*.sol'
+
+      - name: Push a single Solidity file
+        run: |
+          curl -F source_file=@./contracts/Test4Byte.sol https://www.4byte.directory/api/v1/import-solidity/
+
       - name: Enumerate and push each Solidity file
         run: find $(pwd) -name '*.sol' | xargs -n 1 -I {} curl -F source_file=@{} https://www.4byte.directory/api/v1/import-solidity/
