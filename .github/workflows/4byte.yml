@@ -11,6 +11,7 @@ jobs:
       - name: Show current folder
         run: |
           echo $(pwd)
+          ls -la
 
       - name: Show Solidity files
         run: |
