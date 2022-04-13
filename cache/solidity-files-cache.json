@@ -1,16 +1,8 @@
 {
   "_format": "ethers-rs-sol-cache-3",
-  "paths": {
-    "artifacts": "out",
-    "sources": "contracts",
-    "tests": "test",
-    "libraries": [
-      "lib"
-    ]
-  },
   "files": {
-    "/home/daniel/Development/github.com/cleanunicorn/4byte-update/contracts/Test4Byte copy.sol": {
-      "lastModificationDate": 1649856244568,
+    "/Users/cleanunicorn/Development/github.com/cleanunicorn/4byte-update/contracts/Test4Byte copy.sol": {
+      "lastModificationDate": 1649856892054,
       "contentHash": "aa51bafe4a3badb0be0cfe9bfa46511f",
       "sourceName": "contracts/Test4Byte copy.sol",
       "solcConfig": {
@@ -19,9 +11,6 @@
             "enabled": true,
             "runs": 200
           },
-          "metadata": {
-            "bytecodeHash": "none"
-          },
           "outputSelection": {
             "*": {
               "": [
@@ -42,12 +31,12 @@
       "versionRequirement": null,
       "artifacts": {
         "WeirdContract": {
-          "0.8.13+commit.abaa5c0e.Linux.gcc": "Test4Byte copy.sol/WeirdContract.json"
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Test4Byte copy.sol/WeirdContract.json"
         }
       }
     },
-    "/home/daniel/Development/github.com/cleanunicorn/4byte-update/contracts/Test4Byte.sol": {
-      "lastModificationDate": 1649854050358,
+    "/Users/cleanunicorn/Development/github.com/cleanunicorn/4byte-update/contracts/Test4Byte.sol": {
+      "lastModificationDate": 1649856892054,
       "contentHash": "aa51bafe4a3badb0be0cfe9bfa46511f",
       "sourceName": "contracts/Test4Byte.sol",
       "solcConfig": {
@@ -56,9 +45,6 @@
             "enabled": true,
             "runs": 200
           },
-          "metadata": {
-            "bytecodeHash": "none"
-          },
           "outputSelection": {
             "*": {
               "": [
@@ -79,7 +65,7 @@
       "versionRequirement": null,
       "artifacts": {
         "WeirdContract": {
-          "0.8.13+commit.abaa5c0e.Linux.gcc": "Test4Byte.sol/WeirdContract.json"
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Test4Byte.sol/WeirdContract.json"
         }
       }
     }
