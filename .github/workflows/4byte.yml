@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Show current folder
+        run: |
+          echo $(pwd)
+
       - name: Show Solidity files
         run: |
           find $(pwd) -name '*.sol'
