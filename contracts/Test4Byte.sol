@@ -19,6 +19,10 @@ contract WeirdContract {
         emit MsgSig(msg.sig);
     }
 
+    function weirdName1() public {
+        emit MsgSig(msg.sig);
+    }    
+
     function anotherWeirdName() public {
         emit MsgSig(msg.sig);
     }
