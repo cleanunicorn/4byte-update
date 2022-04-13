@@ -15,29 +15,41 @@ contract WeirdContract {
     error Aer__transferCredit_insufficientCredit();
     error Aer__lock_notLive();
 
+    error TEST_arguments(uint, uint);
+
     function weirdName() public {
         emit MsgSig(msg.sig);
     }
-
-    function weirdName1() public {
-        emit MsgSig(msg.sig);
-    }    
 
     function anotherWeirdName() public {
         emit MsgSig(msg.sig);
     }
 
-    function emitError() public {
+    function emitError1() public {
         revert Aer__setParam_unrecognizedParam();
     }
 
-    function showError() public {
+    function emitError2() public {
+        revert TEST_arguments(0x11223344, 0x55667788);
+    }
+
+    function showError1() public {
         (bool success, bytes memory result) = address(this).call(
             abi.encodeWithSelector(
-                this.emitError.selector
+                this.emitError1.selector
             )
         );
 
         emit Bytes(result);
     }
+
+    function showError2() public {
+        (bool success, bytes memory result) = address(this).call(
+            abi.encodeWithSelector(
+                this.emitError2.selector
+            )
+        );
+
+        emit Bytes(result);
+    }    
 }
