@@ -1,0 +1,13 @@
+name: Update 4byte.directory
+
+on:
+  - push
+
+jobs:
+  push-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Enumerate and push each Solidity file
+        run: |
+          find $(pwd) -name '*.sol' | xargs -n 1 -I {} curl -F source_file=@{} https://www.4byte.directory/api/v1/import-solidity/
